@@ -27,12 +27,83 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 
  // store the activities in local storage
 
- var saveButtonEL = document.querySelector('#saveBtn');
- 
- function storeActivity() {
-    var input = document.getElementById("input2").value;
-    localStorage.setItem("dailyactivity", input);
+ var saveButtonEL1 = document.querySelector('#saveBtn1');
+ function storeActivity1() {
+    var input1 = document.getElementById("input1").value;
+ localStorage.setItem("dailyactivity1", input1);
  }
- saveButtonEL.onclick = () => {
-    storeActivity();
+ saveButtonEL1.onclick = () => {
+    storeActivity1();
+  }
+ 
+  var saveButtonEL2 = document.querySelector('#saveBtn2');
+ function storeActivity2() {
+ var input2 = document.getElementById("input2").value;
+ localStorage.setItem("dailyactivity2", input2);
+ }
+ saveButtonEL2.onclick = () => {
+    storeActivity2();
+  }
+
+  var saveButtonEL3 = document.querySelector('#saveBtn3');
+ function storeActivity3() {
+ var input = document.getElementById("input3").value;
+ localStorage.setItem("dailyactivity3", input);
+ }
+ saveButtonEL3.onclick = () => {
+    storeActivity3();
+  }
+
+  var saveButtonEL4 = document.querySelector('#saveBtn4');
+ function storeActivity4() {
+ var input = document.getElementById("input4").value;
+ localStorage.setItem("dailyactivity4", input);
+ }
+ saveButtonEL4.onclick = () => {
+    storeActivity4();
+  }
+
+  var saveButtonEL5 = document.querySelector('#saveBtn5');
+ function storeActivity5() {
+ var input = document.getElementById("input5").value;
+ localStorage.setItem("dailyactivity5", input);
+ }
+ saveButtonEL5.onclick = () => {
+    storeActivity5();
+  }
+
+  var saveButtonEL6 = document.querySelector('#saveBtn6');
+ function storeActivity6() {
+ var input = document.getElementById("input6").value;
+ localStorage.setItem("dailyactivity6", input);
+ }
+ saveButtonEL6.onclick = () => {
+    storeActivity6();
+  }
+
+  var saveButtonEL7 = document.querySelector('#saveBtn7');
+ function storeActivity7() {
+ var input = document.getElementById("input7").value;
+ localStorage.setItem("dailyactivity7", input);
+ }
+ saveButtonEL7.onclick = () => {
+    storeActivity7();
+ }
+
+  var saveButtonEL8 = document.querySelector('#saveBtn8');
+ function storeActivity8() {
+ var input = document.getElementById("input8").value;
+ localStorage.setItem("dailyactivity8", input);
+ }
+ saveButtonEL8.onclick = () => {
+    storeActivity8();
+  }
+
+  var saveButtonEL9 = document.querySelector('#saveBtn9');
+ function storeActivity9() {
+ var input = document.getElementById("input9").value;
+ localStorage.setItem("dailyactivity9", input);
+ }
+ saveButtonEL9.onclick = () => {
+    storeActivity9();
   }
