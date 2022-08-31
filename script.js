@@ -17,25 +17,83 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 //will be using this to target the hour
 //write if else if statment comparent the to and change the attribute depending on the color (set attribute of class past)
 
-//local storage to save the notes 
-//use text and hour
 
- //var hour= moment().hour(Number);
- //Number = 10
- //console.log(hour)
+var CurrentDate = moment().format();
+
+
+ 
+ //Retrieve local storage on opening page 
+function reload1() {
+var x = localStorage.getItem("dailyactivity1");
+document.getElementById("input1").innerHTML = x;
+}
+
+function reload2() {
+var x = localStorage.getItem("dailyactivity2");
+document.getElementById("input2").innerHTML = x;
+}
+
+function reload3() {
+var x = localStorage.getItem("dailyactivity3");
+document.getElementById("input3").innerHTML = x;
+}
+
+function reload4() {
+var x = localStorage.getItem("dailyactivity4");
+    document.getElementById("input4").innerHTML = x;
+}
+
+function reload5() {
+var x = localStorage.getItem("dailyactivity5");
+document.getElementById("input5").innerHTML = x;
+  }
+
+function reload6() {
+ var x = localStorage.getItem("dailyactivity6");
+document.getElementById("input6").innerHTML = x;
+ }
+
+ function reload7() {
+var x = localStorage.getItem("dailyactivity7");
+ document.getElementById("input7").innerHTML = x;
+}
+
+function reload8() {
+var x = localStorage.getItem("dailyactivity8");
+document.getElementById("input8").innerHTML = x;
+}
+
+function reload9() {
+    var x = localStorage.getItem("dailyactivity9");
+    document.getElementById("input9").innerHTML = x;
+    }
+
+$( document ).ready(reload1);
+$( document ).ready(reload2);
+$( document ).ready(reload3);
+$( document ).ready(reload4);
+$( document ).ready(reload5);
+$( document ).ready(reload6);
+$( document ).ready(reload7);
+$( document ).ready(reload8);
+$( document ).ready(reload9);
+
+
+
 
 
  // store the activities in local storage
-
+ //9am
  var saveButtonEL1 = document.querySelector('#saveBtn1');
  function storeActivity1() {
     var input1 = document.getElementById("input1").value;
  localStorage.setItem("dailyactivity1", input1);
- }
- saveButtonEL1.onclick = () => {
-    storeActivity1();
-  }
+ };
  
+ saveButtonEL1.onclick = () => {
+ storeActivity1();
+ }
+ //10am
   var saveButtonEL2 = document.querySelector('#saveBtn2');
  function storeActivity2() {
  var input2 = document.getElementById("input2").value;
@@ -44,7 +102,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL2.onclick = () => {
     storeActivity2();
   }
-
+//11am
   var saveButtonEL3 = document.querySelector('#saveBtn3');
  function storeActivity3() {
  var input = document.getElementById("input3").value;
@@ -53,7 +111,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL3.onclick = () => {
     storeActivity3();
   }
-
+//12noon
   var saveButtonEL4 = document.querySelector('#saveBtn4');
  function storeActivity4() {
  var input = document.getElementById("input4").value;
@@ -62,7 +120,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL4.onclick = () => {
     storeActivity4();
   }
-
+//1pm
   var saveButtonEL5 = document.querySelector('#saveBtn5');
  function storeActivity5() {
  var input = document.getElementById("input5").value;
@@ -71,7 +129,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL5.onclick = () => {
     storeActivity5();
   }
-
+//2pm
   var saveButtonEL6 = document.querySelector('#saveBtn6');
  function storeActivity6() {
  var input = document.getElementById("input6").value;
@@ -80,7 +138,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL6.onclick = () => {
     storeActivity6();
   }
-
+//3pm
   var saveButtonEL7 = document.querySelector('#saveBtn7');
  function storeActivity7() {
  var input = document.getElementById("input7").value;
@@ -89,7 +147,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL7.onclick = () => {
     storeActivity7();
  }
-
+//4pm
   var saveButtonEL8 = document.querySelector('#saveBtn8');
  function storeActivity8() {
  var input = document.getElementById("input8").value;
@@ -98,7 +156,7 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  saveButtonEL8.onclick = () => {
     storeActivity8();
   }
-
+//5pm
   var saveButtonEL9 = document.querySelector('#saveBtn9');
  function storeActivity9() {
  var input = document.getElementById("input9").value;
