@@ -18,7 +18,36 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 //write if else if statment comparent the to and change the attribute depending on the color (set attribute of class past)
 
 
-var CurrentDate = moment().format();
+
+//var CurrentDate = moment()
+
+//format date using moment
+var reformatDate1 = moment("9am", "h a").format("h a");
+$("#inputGroup-sizing-default1").text(reformatDate1);
+
+var reformatDate2 = moment("10am", "h a").format("h a");
+$("#inputGroup-sizing-default2").text(reformatDate2);
+
+var reformatDate3 = moment("11am", "h a").format("h a");
+$("#inputGroup-sizing-default3").text(reformatDate3);
+
+var reformatDate4 = moment("12pm", "h a").format("h a");
+$("#inputGroup-sizing-default4").text(reformatDate4);
+
+var reformatDate5 = moment("1pm", "h A").format("h A");
+$("#inputGroup-sizing-default5").text(reformatDate5);
+
+var reformatDate6 = moment("2pm", "h a").format("h a");
+$("#inputGroup-sizing-default6").text(reformatDate6);
+
+var reformatDate7 = moment("3pm", "h a").format("h a");
+$("#inputGroup-sizing-default7").text(reformatDate7);
+
+var reformatDate8 = moment("4pm", "h a").format("h a");
+$("#inputGroup-sizing-default8").text(reformatDate8);
+
+var reformatDate9 = moment("5pm", "h a").format("h a");
+$("#inputGroup-sizing-default9").text(reformatDate9);
 
 
  
