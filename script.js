@@ -10,8 +10,6 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
  // time += i + ".00" + "<br>";
 //}
 
-//document.getElementById("hours8").innerHTML = time;
-
 //get the correct format for moment and set it equal to a variable 
 //compare that to the id of the hour (9 am ,  10am 11am)
 //will be using this to target the hour
@@ -19,7 +17,23 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 
 
-//var CurrentDate = moment()
+function colourCode() {
+var input1 = getElementById('input1')
+var currentDate = moment();
+if (currentDate < reformatDate1){
+    document.getElementById("input1").setAttribute("class", "past");
+}
+else if (currentDate === reformatDate1) {
+    input1.setAttribute('class', 'present');
+    
+} else {
+    input1.setAttribute("class", "future");
+}};
+
+
+
+
+
 
 //format date using moment
 var reformatDate1 = moment("9am", "h a").format("h a");
