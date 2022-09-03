@@ -3,37 +3,6 @@
 var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
-// set differing time slots
-//var dailyTime = document.getElementById("inputGroup-sizing-default");
-//var time = "";
-//for (let i = 0 + 9; i < 18; i++) {
- // time += i + ".00" + "<br>";
-//}
-
-//get the correct format for moment and set it equal to a variable 
-//compare that to the id of the hour (9 am ,  10am 11am)
-//will be using this to target the hour
-//write if else if statment comparent the to and change the attribute depending on the color (set attribute of class past)
-
-
-
-function colourCode() {
-var input1 = getElementById('input1')
-var currentDate = moment();
-if (currentDate < reformatDate1){
-    document.getElementById("input1").setAttribute("class", "past");
-}
-else if (currentDate === reformatDate1) {
-    input1.setAttribute('class', 'present');
-    
-} else {
-    input1.setAttribute("class", "future");
-}};
-
-
-
-
-
 
 //format date using moment
 var reformatDate1 = moment("9am", "h a").format("h a");
@@ -64,7 +33,105 @@ var reformatDate9 = moment("5pm", "h a").format("h a");
 $("#inputGroup-sizing-default9").text(reformatDate9);
 
 
- 
+//changing colour based on time of day
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate1){
+input1.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate1) {
+    input1.setAttribute('class', 'present');
+   } else {
+    input1.setAttribute("class", "future");
+};
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate2){
+input2.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate2) {
+    input2.setAttribute('class', 'present');
+   } else {
+  input2.setAttribute("class", "future");
+};
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate3){
+input3.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate3) {
+    input3.setAttribute('class', 'present');
+   } else {
+  input3.setAttribute("class", "future");
+};
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate4){
+input4.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate4) {
+    input4.setAttribute('class', 'present');
+   } else {
+  input4.setAttribute("class", "future");
+};
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate5){
+input5.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate5) {
+    input5.setAttribute('class', 'present');
+   } else {
+  input5.setAttribute("class", "future");
+};
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate6){
+input6.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate6) {
+    input6.setAttribute('class', 'present');
+   } else {
+  input6.setAttribute("class", "future");
+};
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate7){
+input7.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate7) {
+    input7.setAttribute('class', 'present');
+   } else {
+  input7.setAttribute("class", "future");
+};
+
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate8){
+input8.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate8) {
+    input8.setAttribute('class', 'present');
+   } else {
+  input8.setAttribute("class", "future");
+};
+
+
+var currentDate = moment().format("h a");
+if (currentDate > reformatDate9){
+input9.setAttribute("class", "past");
+}
+else if (currentDate === reformatDate9) {
+    input9.setAttribute('class', 'present');
+   } else {
+  input9.setAttribute("class", "future");
+};
+
+
  //Retrieve local storage on opening page 
 function reload1() {
 var x = localStorage.getItem("dailyactivity1");
