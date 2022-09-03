@@ -5,31 +5,31 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 
 //format date using moment
-var reformatDate1 = moment("9am", "h a").format("h a");
+var reformatDate1 = moment("9am", "h a").format("hh a");
 $("#inputGroup-sizing-default1").text(reformatDate1);
 
-var reformatDate2 = moment("10am", "h a").format("h a");
+var reformatDate2 = moment("10am", "h a").format("hh a");
 $("#inputGroup-sizing-default2").text(reformatDate2);
 
-var reformatDate3 = moment("11am", "h a").format("h a");
+var reformatDate3 = moment("11am", "h a").format("hh a");
 $("#inputGroup-sizing-default3").text(reformatDate3);
 
-var reformatDate4 = moment("12pm", "h a").format("h a");
+var reformatDate4 = moment("12pm", "h a").format("hh a");
 $("#inputGroup-sizing-default4").text(reformatDate4);
 
-var reformatDate5 = moment("1pm", "h A").format("h A");
+var reformatDate5 = moment("1pm", "h A").format("hh A");
 $("#inputGroup-sizing-default5").text(reformatDate5);
 
-var reformatDate6 = moment("2pm", "h a").format("h a");
+var reformatDate6 = moment("2pm", "h a").format("hh a");
 $("#inputGroup-sizing-default6").text(reformatDate6);
 
-var reformatDate7 = moment("3pm", "h a").format("h a");
+var reformatDate7 = moment("3pm", "h a").format("hh a");
 $("#inputGroup-sizing-default7").text(reformatDate7);
 
-var reformatDate8 = moment("4pm", "h a").format("h a");
+var reformatDate8 = moment("4pm", "h a").format("hh a");
 $("#inputGroup-sizing-default8").text(reformatDate8);
 
-var reformatDate9 = moment("5pm", "h a").format("h a");
+var reformatDate9 = moment("11pm", "h a").format("hh a");
 $("#inputGroup-sizing-default9").text(reformatDate9);
 
 
@@ -38,110 +38,109 @@ $("#inputGroup-sizing-default9").text(reformatDate9);
 var currentDate = moment().format("h a");
 if (currentDate > reformatDate1){
   input1.setAttribute("class", "past");
-  input1.removeAttribute("class", "present");
-  input1.removeAttribute("class", "future");
-  };
-if (currentDate === reformatDate1) {
+  }
+else if (currentDate === reformatDate1) {
     input1.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate1) { 
+   }
+else  
       input1.setAttribute("class", "future");
-};
 
+  
 //10am timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate2){
 input2.setAttribute("class", "past");
-};
-if (currentDate === reformatDate2) {
+}
+else if (currentDate === reformatDate2) {
     input2.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate2){
+   }
+else {
   input2.setAttribute("class", "future");
 };
 
 //11am timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate3){
 input3.setAttribute("class", "past");
-};
-if (currentDate === reformatDate3) {
+}
+else if (currentDate === reformatDate3) {
     input3.setAttribute('class', 'present');
-   };
-if (currentDate<reformatDate3) {
+   }
+else{
   input3.setAttribute("class", "future");
 };
 
 //12pm timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate4){
 input4.setAttribute("class", "past");
-};
-if (currentDate === reformatDate4) {
+}
+else if (currentDate === reformatDate4) {
     input4.setAttribute('class', 'present');
-   };
-if (currentDate<reformatDate4) {
+   }
+else {
   input4.setAttribute("class", "future");
 };
 
 //1pm timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate5){
 input5.setAttribute("class", "past");
-};
-if (currentDate === reformatDate5) {
+}
+else if (currentDate === reformatDate5) {
     input5.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate5) {
+   }
+else {
   input5.setAttribute("class", "future");
 };
 
 //2pm timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate6){
 input6.setAttribute("class", "past");
-};
-if (currentDate === reformatDate6) {
+}
+else if (currentDate === reformatDate6) {
     input6.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate6) {
+   }
+else {
   input6.setAttribute("class", "future");
 };
 
 //3pm timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate7){
 input7.setAttribute("class", "past");
-};
-if (currentDate === reformatDate7) {
+}
+else if (currentDate === reformatDate7) {
     input7.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate7) {
+   }
+else {
   input7.setAttribute("class", "future");
 };
 
 
+
 //4pm timeslot
-var currentDate = moment().format("h a");
+//var currentDate = moment().format("h a");
 if (currentDate > reformatDate8){
 input8.setAttribute("class", "past");
-};
-if (currentDate === reformatDate8) {
+}
+else if (currentDate === reformatDate8) {
     input8.setAttribute('class', 'present');
-   };
-if (currentDate < reformatDate8) {
+   }
+else {
   input8.setAttribute("class", "future");
 };
 
 //5pm timeslot
-var currentDate = moment().format("h a");
+///var currentDate = moment().format("h a");
 if (currentDate > reformatDate9){
 input9.setAttribute("class", "past");
-};
-if (currentDate === reformatDate9) {
+}
+else if (currentDate === reformatDate9) {
     input9.setAttribute('class', 'present');
-};
-if (currentDate < reformatDate9) {
+}
+else{
   input9.setAttribute("class", "future");
 };
 
