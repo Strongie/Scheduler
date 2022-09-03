@@ -1,5 +1,8 @@
 Project - # 05 Third-Party APIs: Work Day Scheduler
 
+URL: 
+
+
 Task - Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 User Story - AS AN employee with a busy schedule I WANT to add important events to a daily planner SO THAT I can manage my time effectively
@@ -18,3 +21,12 @@ WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+
+Work Day Scheduler Sample
+
+![image](https://user-images.githubusercontent.com/109957674/188273518-d615b39a-c804-497d-91d7-76ab6d3f0e3b.png)
+
+
+Outcome
+
+I learnt alot on this project regarding the use of bootstrap, jquery and momentjs
