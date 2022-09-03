@@ -1,6 +1,6 @@
 Project - # 05 Third-Party APIs: Work Day Scheduler
 
-URL: 
+URL:  https://strongie.github.io/Scheduler/
 
 
 Task - Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
@@ -24,7 +24,8 @@ THEN the saved events persist
 
 Work Day Scheduler Sample
 
-![image](https://user-images.githubusercontent.com/109957674/188273518-d615b39a-c804-497d-91d7-76ab6d3f0e3b.png)
+![image](https://user-images.githubusercontent.com/109957674/188273778-501a7ea6-767e-4dba-b265-d0e882dc38c7.png)
+
 
 
 Outcome
